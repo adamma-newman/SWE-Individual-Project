@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<title>All Ears Initiative</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold; background-color:#AD3C6F; color:white" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <a href="/">
+    <img style="max-width:100%; max-height:100%;" src="https://lh4.googleusercontent.com/kDyMxH_hUSeJwhNKvtpZYHDspNrAvd7TEwjEY4OBOUWvboeIreHMNu2rqiEJFky62g6ZKEPXEkJYtwwBellLW2-SKT0NJqGf6GC2Wlbh9UAJCosyqajHyU2h4sLRwmGkrJBySW6u"/>
+    </a>
+  </div>
+  <div class="w3-bar-block">
+    <a href="homepage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">MotherBoard</a> 
+    <a href=#feeling onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">How are you feeling?</a> 
+    <a href="#doctor" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Things to ask your doctor</a> 
+    <a href="#tip" onclick="    w3_close()" class="w3-bar-item w3-button w3-hover-white">Tip of the Day</a> 
+    <a href="community.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">MotherBoard Social Network</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact us</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style = "background-color: #AD3C6F" >
+  <a href="javascript:void(0)" class="w3-button  w3-margin-right" onclick="w3_open()" style = "color: #ffffff">☰</a>
+  <span style = "color: #ffffff">All Ears Initiative</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>MotherBoard</b></h1>
+    <h1 style ="font-size:20px; color:#AD3C6F"><b>Your Personal Dashboard for all mommy needs!</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#AD3C6F"><b>Your baby is the size of a... </b></h1>
+    <hr style="width:50px;border:5px solid #AD3C6F" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <img style="max-width:40%; max-height:35%;" src="https://lh3.googleusercontent.com/iWyyHXfkflnIVf0WJ0q-mQSHSxp-nSinooutsgvvpNz7CcJC6C0P2CrH2wvvNnKVPH4EjgrJaxH3IdqljMXZsMorR5gJ9Ku_08UxchBT71De4W0sHLFLf5jHh8oK3vg1PNKk7O7t"/>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color:#AD3C6F" id="feeling"><b>How are you feeling?</b></h1>
+    <hr style="width:50px;border:5px solid #AD3C6F" class="w3-round">
+    <p>This section allows you to document symptoms you may be experiencing for a better understanding of what complications are linked to them. Documenting daily is encouraged if you experience symptoms more than usual. Using a machine learning algorithm, the motherboard evaluates your daily symptoms for possible linkage to pregnancy complications.</p>
+    <a class="w3-button w3-padding-large w3-large" style="background-color:#AD3C6F; color: white; position: absolute;" href="feeling.html">Take Questionnaire</a>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color:#AD3C6F" id="doctor"><b>Things to ask your doctor. </b></h1>
+    <hr style="width:50px;border:5px solid #AD3C6F" class="w3-round">
+    <p>Once you have documented your symptoms, this section will give you an analysis of possible complications that are linked to your symptoms.  Not only do you get the analysis, but each complication listed will also come with a guide to explain what the complication is in depth and possible treatment options.  The guide will help you better communicate with your doctor regarding your concerns!
+</p>
+    <a class="w3-button w3-padding-large w3-large" style="background-color:#AD3C6F; color: white; position: absolute;" href="doctor.html">Visit Doctor Page</a>
+  </div>
+
+  
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color:#AD3C6F" id="tip"><b>Tip of the Day!</b></h1>
+    <hr style="width:50px;border:5px solid #AD3C6F" class="w3-round">
+    <img src="https://lh3.googleusercontent.com/ZOt-YJicxmmIBoOpDv-m7MQOBU-FxcXctsND1z7wNrXxEJC2td_2M2DVWoh4MEFkLu2r5kMgO55pbL5NqXSlt_RHk-gJCNrFf0mQt76aR1l-FGN0irRKDgVbQYCeYFNFH2KtShmk">
+  </div>
+
+  
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color:#AD3C6F"><b>Contact us</b></h1>
+    <hr style="width:50px;border:5px solid #AD3C6F" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-margin-bottom" style="background-color:#AD3C6F; color:white">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
